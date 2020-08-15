@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(162, 175, 253);
+}
+
+.main {
+    padding-bottom: 30px;
+    width: 240px;
+    background-color: rgb(219, 90, 38);
+    border: solid 2px;
+    border-color: white black black white;
+}
+
+#display {
+    height: 70px;
+    width: 100%;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+}
+
+#drum-machine {
+    width: 100%;
+}
+
+.drum-pad {
+    width: 70px;
+    height: 70px;
+    background-image: url('../assets/images/emptyCoinBlock.png');
+    background-size: contain;
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(253, 119, 34);
+    font-size: 2em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
+
+.drum-pad:hover {
+    cursor: pointer;
+    animation: flash 1s;
+}
+
+@keyframes flash {
+    25% {
+        opacity: 0.7;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
